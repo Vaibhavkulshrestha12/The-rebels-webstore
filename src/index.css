@@ -1,0 +1,60 @@
+@import url('https://fonts.cdnfonts.com/css/nofex');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Impact', system-ui, sans-serif;
+    background-color: #000000;
+    color: #EAE2D3;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nofex', system-ui, sans-serif;
+  }
+
+  input {
+    font-family: 'Impact', system-ui, sans-serif;
+  }
+}
+
+.hover\:glitch-effect:hover {
+  animation: glitch 1s;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
