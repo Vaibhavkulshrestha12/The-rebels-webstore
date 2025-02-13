@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { useParams } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 
@@ -222,11 +222,11 @@ const CollectionPage = () => {
           <h1 className="text-4xl font-nofex font-bold mb-4">{collection.title}</h1>
           <p className="text-rebel-light/70 text-lg">{collection.description}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {collection.products.map((product) => (
             <ProductCard key={product.id} {...product} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
