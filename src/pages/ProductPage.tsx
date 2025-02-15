@@ -92,7 +92,7 @@ const ProductPage = () => {
             </div>
           </div>
 
-          <button className="w-full py-4 bg-rebel-light text-rebel-dark font-semibold rounded-md hover:opacity-90 transition-opacity">
+          <button className="w-full py-4 bg-orange-600 text-rebel-dark hover:text-white font-semibold rounded-md hover:opacity-90 transition-opacity">
             Add to Cart
           </button>
 

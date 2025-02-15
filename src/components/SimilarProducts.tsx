@@ -105,7 +105,7 @@ const SimilarProducts = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {popularProducts.map((product) => (
-          <div key={product.id} className="group cursor-pointer">
+          <div key={product.id} className=" border border-gray-600 p-3 group cursor-pointer">
             <div className="relative mb-4">
               {/* Image Container */}
               <div className="aspect-square overflow-hidden rounded-lg bg-gray-100">
