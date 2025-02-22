@@ -130,7 +130,7 @@ const ShoppingCart = () => {
         {/* Order Summary Section */}
         <div className="lg:col-span-1">
           <div className="bg-white rounded-lg shadow-sm p-6 space-y-6">
-            <h2 className="text-xl font-nofex font-semibold">Order Summary</h2>
+            <h2 className="text-xl text-rebel-dark font-nofex font-semibold">Order Summary</h2>
 
             <div className="space-y-4">
               <div className="flex justify-between">
@@ -147,7 +147,7 @@ const ShoppingCart = () => {
               </div>
               <div className="border-t pt-4">
                 <div className="flex justify-between">
-                  <span className="font-semibold">Total</span>
+                  <span className=" text-rebel-dark font-semibold">Total</span>
                   <span className="font-bold text-lg text-black">
                     ${total.toFixed(2)}
                   </span>
