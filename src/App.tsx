@@ -11,17 +11,19 @@ import LoginForm from "./components/auth/LoginForm";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import { AuthProvider } from "./lib/auth";
 import ProductPage from "./pages/ProductPage"; // Import the new ProductPage component
+import ShoppingCart from "./pages/ShoppingCart";
 
 function App() {
   return (
     <Router>
       <AuthProvider>
-        <div className="min-h-screen bg-rebel-dark text-rebel-light">
+        <div className="min-h-screen bg-rebel-dark overflow-x-hidden text-rebel-light">
           <Navbar />
           <AnnouncementBanner />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/collections/:category" element={<CollectionPage />} />
+            <Route path="/yourcart" element={<ShoppingCart />} />
             <Route
               path="/products/:productName"
               element={<ProductPage />}
